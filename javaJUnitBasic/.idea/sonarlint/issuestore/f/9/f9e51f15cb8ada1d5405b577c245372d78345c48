@@ -1,0 +1,7 @@
+
+b	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(¢‡ìÑ8Ê»ÅŒü0
+g	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(ÊºÍ‡ÿÿÿÿÿ8å»ÅŒü0
+^
+java:S1126,"AReplace this if-then-else statement by a single return statement.(¬££Ş8ÍÂÅŒü0
+U	java:S106:"9Replace this use of System.out or System.err by a logger.(ğÇ­»8ŠÃÅŒü0
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(¹ô×¦üÿÿÿÿ8ÃÅŒü0
