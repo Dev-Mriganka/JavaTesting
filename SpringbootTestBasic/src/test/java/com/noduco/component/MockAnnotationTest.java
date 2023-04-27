@@ -37,9 +37,9 @@ class MockAnnotationTest {
 
     @BeforeEach
     public void beforeEach() {
-        studentOne.setFirstname("Eric");
-        studentOne.setLastname("Roby");
-        studentOne.setEmailAddress("eric.roby@luv2code_school.com");
+        studentOne.setFirstname("Mriganka");
+        studentOne.setLastname("Mondal");
+        studentOne.setEmailAddress("mrigankamondal@noduco.com");
         studentOne.setStudentGrades(studentGrades);
     }
 

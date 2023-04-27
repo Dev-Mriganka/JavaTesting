@@ -17,9 +17,9 @@ public class StudentGrades {
 
     List<Double> mathGradeResults;
 
-        /*
-        Add other subject grades here in future lessons
-        */
+    /*
+    Add other subject grades here in future lessons
+    */
 
     public double addGradeResultsForSingleClass(List<Double> grades) {
         double result = 0;
@@ -29,8 +29,9 @@ public class StudentGrades {
         return result;
     }
 
-    public double findGradePointAverage (List<Double> grades ) {
-        int lengthOfGrades = grades.size();
+    public double findGradePointAverage (List<Double> grades) {
+        int lengthOfGrades;
+        lengthOfGrades = grades.size();
         double sum = addGradeResultsForSingleClass(grades);
         double result = sum / lengthOfGrades;
 
