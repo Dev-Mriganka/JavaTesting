@@ -1,18 +1,21 @@
-package com.noduco.component.models;
+package com.noduco.gradebook.models;
 
 import lombok.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document
 @Getter
 @Setter
 @ToString
 @NoArgsConstructor
 public class CollegeStudent implements Student{
 
+    @Id
     private int id;
     private String firstname;
     private String lastname;
     private String emailAddress;
-    private StudentGrades studentGrades;
 
     public CollegeStudent(String firstname, String lastname, String emailAddress) {
         this.firstname = firstname;
@@ -28,9 +31,5 @@ public class CollegeStudent implements Student{
     @Override
     public String getFullName() {
         return getFirstname() + " " + getLastname();
-    }
-
-    private String getFirstNameAndId() {
-        return getFirstname() + " " + getId();
     }
 }

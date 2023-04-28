@@ -1,7 +1,7 @@
-package com.noduco.component;
+package com.noduco.gradebook;
 
-import com.noduco.component.models.CollegeStudent;
-import com.noduco.component.models.StudentGrades;
+import com.noduco.gradebook.models.CollegeStudent;
+import com.noduco.gradebook.models.StudentGrades;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,9 +1,8 @@
-package com.noduco.component;
+package com.noduco.gradebook;
 
-import com.noduco.component.dao.ApplicationDao;
-import com.noduco.component.models.*;
-import com.noduco.component.service.ApplicationService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.noduco.gradebook.dao.ApplicationDao;
+import com.noduco.gradebook.models.*;
+import com.noduco.gradebook.service.ApplicationService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

@@ -1,6 +1,6 @@
-package com.noduco.component.service;
+package com.noduco.gradebook.service;
 
-import com.noduco.component.dao.ApplicationDao;
+import com.noduco.gradebook.dao.ApplicationDao;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

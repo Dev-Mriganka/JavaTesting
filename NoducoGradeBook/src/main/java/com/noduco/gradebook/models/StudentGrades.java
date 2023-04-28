@@ -1,4 +1,4 @@
-package com.noduco.component.models;
+package com.noduco.gradebook.models;
 
 import lombok.*;
 import org.springframework.stereotype.Component;
@@ -40,20 +40,6 @@ public class StudentGrades {
         resultRound = resultRound.setScale(2, RoundingMode.HALF_UP);
         return resultRound.doubleValue();
 
-    }
-
-    public Boolean isGradeGreater(double gradeOne, double gradeTwo) {
-        if (gradeOne > gradeTwo) {
-            return true;
-        }
-        return false;
-    }
-
-    public Object checkNull(Object obj) {
-        if ( obj != null ) {
-            return obj;
-        }
-        return null;
     }
 
 }

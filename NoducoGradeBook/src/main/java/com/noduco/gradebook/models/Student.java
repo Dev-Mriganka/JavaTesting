@@ -1,4 +1,4 @@
-package com.noduco.component.models;
+package com.noduco.gradebook.models;
 
 public interface Student {
 

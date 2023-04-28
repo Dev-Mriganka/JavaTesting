@@ -1,10 +1,25 @@
-package com.noduco.component.dao;
+package com.noduco.gradebook.models;
+
+import lombok.*;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 
-public class ApplicationDao {
+@Component
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+public class StudentGrades {
+
+    List<Double> mathGradeResults;
+
+    /*
+    Add other subject grades here in future lessons
+    */
 
     public double addGradeResultsForSingleClass(List<Double> grades) {
         double result = 0;
@@ -14,8 +29,9 @@ public class ApplicationDao {
         return result;
     }
 
-    public double findGradePointAverage (List<Double> grades ) {
-        int lengthOfGrades = grades.size();
+    public double findGradePointAverage (List<Double> grades) {
+        int lengthOfGrades;
+        lengthOfGrades = grades.size();
         double sum = addGradeResultsForSingleClass(grades);
         double result = sum / lengthOfGrades;
 
@@ -24,6 +40,13 @@ public class ApplicationDao {
         resultRound = resultRound.setScale(2, RoundingMode.HALF_UP);
         return resultRound.doubleValue();
 
+    }
+
+    public Boolean isGradeGreater(double gradeOne, double gradeTwo) {
+        if (gradeOne > gradeTwo) {
+            return true;
+        }
+        return false;
     }
 
     public Object checkNull(Object obj) {
